@@ -18,8 +18,8 @@ public class Main {
             
             if (digit < 10) // if remainder is a digit
                 result = digit + result; // add digit to the beginning of result string
-            else // else if remainder is a letter
-                result = (char)(digit - 10 + 'A') + result; // add letter
+            else // else if remainder is 10 or more
+                result = (char)(digit - 10 + 'A') + result; // add letter character
             
             number /= newBase; // divide number by new base
         }
